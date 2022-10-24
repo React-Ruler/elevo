@@ -10,6 +10,14 @@ $white-light-color: #fff;
 $black-dark-color: #000;
 $top-notification-color: #f94b3e;
 
+$global-color-primary: #f94b3e;
+$global-color-secondary: #a19c99;
+$global-color-text: #000000;
+$global-color-accent: #5a98ca;
+$global-color-d96754c: #ffffff;
+$global-color-a5808f1: #ebf5f9;
+$global-color-e9b1e03: #feefed;
+
 .elementor-top-section {
   font-size: 18px;
   font-weight: 400;
@@ -45,7 +53,7 @@ body {
 }
 
 .navbar-burger:hover {
-  background-color: #fff !important;
+  background-color: $global-color-d96754c !important;
 }
 
 .navbar-start .navbar-item {
@@ -57,12 +65,12 @@ body {
   text-align: left !important;
   white-space: nowrap !important;
   word-spacing: 0px !important;
-  color: #000 !important;
+  color: $global-color-text !important;
 }
 
 .notification {
   border-radius: 0px !important;
-  background-color: $top-notification-color !important;
+  background-color: $global-color-primary !important;
   padding: 10px !important;
 }
 
@@ -71,7 +79,7 @@ h1.title {
   font-weight: 600 !important;
   line-height: 1em !important;
   letter-spacing: -4px !important;
-  color: $white-light-color !important;
+  color: $global-color-d96754c !important;
   box-sizing: border-box !important;
 }
 
@@ -80,7 +88,7 @@ h4.subtitle {
   font-weight: 400 !important;
   line-height: 34px !important;
   letter-spacing: -1.5px !important;
-  color: $white-light-color !important;
+  color: $global-color-d96754c !important;
   margin-top: 16px !important;
 }
 
@@ -91,7 +99,7 @@ h4.subtitle {
   line-height: 24px !important;
   letter-spacing: 2.5px !important;
   color: $white-light-color !important;
-  background-color: $btn-color-primary !important;
+  background-color: $global-color-primary !important;
   border-radius: 50px 50px 50px 50px !important;
   padding: 18px 40px 16px 40px !important;
   box-shadow: none !important;
@@ -104,7 +112,7 @@ h4.subtitle {
   transition-delay: 0s !important;
   display: inline-block !important;
   box-sizing: border-box !important;
-  fill: $white-light-color !important;
+  fill: $global-color-d96754c !important;
 }
 
 .btn-secondary {
@@ -136,7 +144,7 @@ h4.subtitle {
   padding: 60px 80px 45px 80px;
   background-color: $white-light-color;
   height: 261px;
-  width: 1140px;
+  width: 100%;
 
   h1.title {
     font-size: 40px !important;
@@ -155,19 +163,7 @@ h4.subtitle {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .section-details-card {
-    margin-top: -100px !important;
-    max-width: 384px !important;
-    padding: 30px 40px 22px 40px;
-    p.subtitle {
-      font-size: 17px !important;
-      line-height: 22px !important;
-      font-weight: 400 !important;
-      
-    }
-  }
-}
+
 // Bulma Imports
 
 @import "../node_modules/bulma/sass/utilities/_all.sass";
